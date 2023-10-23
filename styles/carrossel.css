@@ -1,0 +1,171 @@
+.carrossel__title{
+    text-transform: uppercase;
+    color: var(--orange);
+    background-color: var(--white);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-button-prev , .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 1em;
+}
+.card__description{
+    display: flex;
+    justify-content: space-between;
+
+}
+.description__title{
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 16px;
+}
+.description__text{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+
+.description__title-book{
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.description{
+    margin-bottom: 2em;
+}
+.description__image{
+    margin-bottom: 0.5em;
+}
+.card__buttoms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttoms__image{
+    margin: 0 0.5em;
+}
+.buttoms{
+    display: flex;
+}
+.buttoms__anchor{
+    background-color: var(--orange);
+    padding: 0.5em 2.2em;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+.heart-checkbox {
+    display: none;
+}
+
+/* MELHORAR ESTA PARTE, VER COMO UTILIZAR O SWIPER PARA SEPARAR, PERSONALIZAR MELHOR OS BOTÕES LATERAIS
+*/
+@media screen and (min-width: 1024px){
+    .carrossel__title{
+        padding: 3em 0 2em 0;
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper{
+        width: 65%;
+    }
+
+    .swiper-button-prev , .swiper-button-next{
+        display: block;
+        top: 55%;
+        background: var(--blue); 
+        padding: 1.1em 1.3em; 
+        border-radius: 50%; 
+        display: block; 
+        
+    }
+
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+
+    .buttoms__anchor:hover{
+        background-color: var(--white);
+        color: var(--orange);
+    }
+
+
+    .heart:hover {
+        transform: scale(1.2); 
+        transition: all 0.3s; 
+    
+    }
+    .bag:hover {
+        transform: scale(1.2);
+        transition: all 0.3s; 
+    }
+    .user{
+        transform: scale(1.2);
+        transition: all 0.3s; 
+    }
+  
+}
+
+@media screen and (min-width: 1728px){
+    .carrossel_container{
+        display: flex;
+        margin: 4em 13vw 3em 13vw;
+        align-items: center;
+
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 80%;
+    }
+
+    .description__title{
+        font-size: 32px;
+    }
+    .description__text{
+        font-size: 16px;
+    }
+
+    .description{
+        margin-right: 2em;
+    }
+    .card{
+        width: 75%;
+        margin-top: 2em;
+        margin-left: 6em;
+    }
+
+
+}

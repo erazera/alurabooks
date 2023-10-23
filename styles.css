@@ -1,0 +1,33 @@
+
+@import url("styles/carrossel.css");
+@import url("styles/banner.css");
+@import url("styles/header.css");
+@import url("styles/topic.css");
+@import url("styles/contact.css");
+@import url("styles/footer.css");
+
+
+:root{
+    --backgorund-color: #ebecee;
+    --white: #FFFFFF;
+    --orange: #EB9B00;
+    --blue: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --principal-font: "Poppins";
+    --blue: #002F52;
+    --secundary-font: 'Josefin Sans';
+    --black: #000000;
+    --swiper-navigation-size: 20px; 
+    --swiper-navigation-sides-offset: 0px; 
+    --swiper-navigation-color: #fff;
+    --dark-grey: #474646;
+    --ligh-grey: #858585;
+}
+
+body{
+    background-color: var(--backgorund-color);
+    font-family: var(--principal-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
